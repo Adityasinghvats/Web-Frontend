@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <picture>
+        <source media="(min width:700px)" srcset="./image.png"/>
+        <source media="(min width:450px)" srcset="./image2.png"/>
+    </picture> -->
+    <!-- Image map generator -->
+
+    <img src="_b8d344ff-057c-4c24-a852-b2bae9c3ae21.jpg" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="590,1175,1353,1618" shape="rect">
+        <area onclick="two()" target="" alt="" title="" href="" coords="982,792,290" shape="circle">
+    </map>
+    <script>
+        function one(){
+            alert("You clicked on one")
+        }
+        function two(){
+            alert("You clicked on two")
+        }
+    </script>
+</body>
+</html>

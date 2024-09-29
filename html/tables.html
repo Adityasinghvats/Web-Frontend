@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: #090615;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+            background-color: #ba2626;
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr>th*3 -->
+    <!-- <table>
+        <tr>
+            <th>Country</th>
+            <th>country code</th>
+            <th>email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>aditya@aditya</td>
+        </tr>
+        <tr>
+            <td>Usa</td>
+            <td>US</td>
+            <td>aditya@aditya</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>CN</td>
+            <td>aditya@aditya</td>
+        </tr>
+        <tr>
+            <td>Germany</td>
+            <td>GY</td>
+            <td>aditya@aditya</td>
+        </tr>
+    </table> -->
+    <table>
+        <caption>
+            Pata anhi kn bnaya ye table
+        </caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td rowspan="2">11111</td>
+            <td>22222</td>
+        </tr>
+        <tr>
+            <th>Group</th>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Gender(it is a cell)</th>
+            <td>m</td>
+            <td>f</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <th>Conclusion</th>
+                <td>m</td>
+                <td>f</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

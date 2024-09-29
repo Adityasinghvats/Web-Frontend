@@ -1,0 +1,22 @@
+Css has two parts - Foundations and beautiful design
+We generally use component libraries for fast css.
+TailwindCSS , accernity , shadcn, daisyUI.
+
+Advantages of css
+1.font
+2.images
+3.components like button etc.
+
+selecting and styling element
+
+id should be unique to a css component on entire page ,but
+there can me multiple classes.
+
+making login page to learn - flexbox to position elements on page
+
+shortcuts
+div.(classname)
+bgc -> background color
+div -> kind of defining area
+flexbox -> ability to mive elements easier and faster
+selectors from notebook
