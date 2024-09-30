@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        body{
+            background-color: #1a1a1a;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: aliceblue;
+        }
+        .nav-container{
+            padding-bottom: 20px;
+        }
+        .lgn-button{
+            background-color: rgb(141, 136, 197);
+            padding: 5px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav-1{
+            background-color: #a1bcd7;
+            padding: 5px;
+        }
+        .nav-1 ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav-1 li{
+            display: inline;
+        }
+        .nav-1 a{
+            text-decoration: none;
+            /* background-color: aquamarine; */
+            padding: 5px 15px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .nav-1 a::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: #e80d0d;
+            transform: scaleX(0);
+            transition: transform 0.2s ease-in-out;
+        }
+        .nav-1 a:hover::after{
+            transform: scaleX(1);
+        }
+
+
+        .nav-2{
+            background-color: rgb(12, 81, 51);
+            padding: 20px;
+            width: 200px;
+        }
+        .nav-2 ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-2 li{
+            margin-bottom: 12px;
+        }
+        .nav-2 a{
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+        .nav-2 a:hover{
+            background-color: green;
+            border-radius: 3px;
+        }
+        .nav-2 .lgn-button{
+            background-color: greenyellow;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+        .nav-2 .lgn-button:hover{
+            background-color: rgb(13, 158, 13);
+            border: 1px solid #fff;
+        }
+
+
+        .nav-3{
+            background-color: #a1bcd7;
+            padding: 10px;
+        }
+        .nav-3 ul{
+            list-style-type: none;
+            padding: 0;
+            margin:0;
+            display: flex;
+            /* left to right adjust */
+            justify-content: space-around;
+            /* top to bottom adjust */
+            align-items: center;
+        }
+        .nav-3 a{
+            text-decoration: none;
+            color:black;
+            padding: 10px;
+            display: block;
+        }
+        .nav-3 .dropdown-content{
+            display: none;
+        }
+        .nav-3 .drop-down:hover .dropdown-content{
+            display: block;
+            position: absolute;
+            background-color: rgb(141, 136, 197);
+            border-radius: 5px;
+            min-width: 125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <h4>First Navbar</h4>
+        <nav class="nav-1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="lgn-button">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h4>Second Navbar</h4>
+        <nav class="nav-2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><button class="lgn-button">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-container">
+        <h4>Third Navbar</h4>
+        <nav class="nav-3">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="drop-down">
+                    <a href="#">About us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Story</a>
+                        <a href="#">Team</a>
+                        <a href="#">Careers</a>
+                    </div>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><button class="lgn-button">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
