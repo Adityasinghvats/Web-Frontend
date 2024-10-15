@@ -18,5 +18,9 @@ shortcuts
 div.(classname)
 bgc -> background color
 div -> kind of defining area
-flexbox -> ability to mive elements easier and faster
+flexbox -> ability to move elements easier and faster
 selectors from notebook
+
+WE remove all the paddng already provided by browser.
+
+Flexbox has 2 axis - main axis and alternative axis
