@@ -1,0 +1,2 @@
+To get suggestions run command in directory where tailwind is setup
+ ` npx tailwindcss -i ./src/input.css -o ./src/output.css --watch `
