@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break-Point</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .responsive{
+            width: 100%;
+            /* max it can do on o chnaging the size of screen */
+            max-width: 1200px;
+            padding: 20px;
+            color: aliceblue;
+            background-color: blue;
+            font-size: 25px;
+        }
+        /* Work upto 600px */
+        /* Responsive breakpoints */
+        @media (max-width:400px){
+            body{
+                align-items: flex-start;
+            }
+            .responsive{
+                background-color: violet;
+            }
+        }
+        @media (min-width:601px) and (max-width:1200px){
+            body{
+                align-items: flex-start;
+            }
+            .responsive{
+                background-color: rebeccapurple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        this div changes colour based on the screen size!!
+    </div>
+</body>
+</html>
