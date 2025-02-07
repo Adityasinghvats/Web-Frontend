@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .center-absolute {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="main w-full">
+    <nav class="fixed top-0 w-full z-50 bg-black/30 backdrop-blur-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-start h-16 space-x-12">
+          <h1 class="text-white text-2xl font-thin tracking-wider">CYBERPUNK 2077</h1>
+          <h1 class="text-white text-xl font-bold tracking-wider">About</h1>
+          <h1 class="text-white text-xl font-bold tracking-wider">Store</h1>
+        </div>
+      </div>
+    </nav>
+    <div class="w-full h-screen overflow-hidden relative">
+      <canvas id="canvas" class="absolute top-0 left-0 w-full h-full"></canvas>
+      <div class="center-absolute z-10 pointer-events-none">
+        <img class="w-64 mix-blend-screen brightness-150 opacity-75" 
+            src="./public/Cyberpunk_2077_logo.png" 
+            alt="Cyberpunk Logo">
+      </div>
+    </div>
+    <div class="w-full h-screen bg-zinc-800"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
